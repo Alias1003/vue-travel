@@ -1,0 +1,99 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 2980498 */
+  src: url('iconfont.woff2?t=1639720423794') format('woff2'),
+       url('iconfont.woff?t=1639720423794') format('woff'),
+       url('iconfont.ttf?t=1639720423794') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-fanhui:before {
+  content: "\e624";
+}
+
+.icon-shangcheng:before {
+  content: "\e7a8";
+}
+
+.icon-shouye:before {
+  content: "\e610";
+}
+
+.icon-wode:before {
+  content: "\e63f";
+}
+
+.icon-dingdan:before {
+  content: "\e60e";
+}
+
+.icon-31hongbao:before {
+  content: "\e600";
+}
+
+.icon-dangdidachefuwu2:before {
+  content: "\e68d";
+}
+
+.icon-mudedi:before {
+  content: "\e616";
+}
+
+.icon-lvyou:before {
+  content: "\e657";
+}
+
+.icon-huochezhan:before {
+  content: "\e603";
+}
+
+.icon-mayijinfu:before {
+  content: "\e604";
+}
+
+.icon-pinche:before {
+  content: "\e620";
+}
+
+.icon-sousuo_minsu:before {
+  content: "\e6a6";
+}
+
+.icon-qiangpiao:before {
+  content: "\e6a0";
+}
+
+.icon-kefu:before {
+  content: "\e62d";
+}
+
+.icon-24gl-hotel:before {
+  content: "\e836";
+}
+
+.icon-baoxian:before {
+  content: "\e6ba";
+}
+
+.icon-beiyongjin:before {
+  content: "\e65b";
+}
+
+.icon-huoche:before {
+  content: "\e608";
+}
+
+.icon-hewomenliaoliao:before {
+  content: "\e60f";
+}
+
+.icon-sousuo:before {
+  content: "\e602";
+}
+
