@@ -25,7 +25,7 @@
         },
         methods:{
             getOrderInfo(){
-                axios.get('/index.json')
+                axios.get('/order.json')
                     .then(this.getOrderInfoSucc)
                     .catch(err=>{
                         console.log(err)
@@ -46,5 +46,7 @@
 </script>
 
 <style scoped>
-
+    div{
+        background: #eceef0;
+    }
 </style>

@@ -1,19 +1,25 @@
 <template>
-    <div class="wrapper">
-        <swiper ref="mySwiper" :options="swiperOptions" v-if="showList">
-            <swiper-slide v-for="item in List" :key="item.id">
-                <img class="swiper-img" v-bind:src="item.imgUrl" alt="">
-            </swiper-slide>
-            <div class="swiper-pagination" slot="pagination"></div>
-        </swiper>
+    <div>
+        <div class="wrapper">
+            <swiper ref="mySwiper" :options="swiperOptions" v-if="showList">
+                <swiper-slide v-for="item in mSwipe" :key="item.id">
+                    <img class="swiper-img" v-bind:src="item.imgUrl" alt="">
+                </swiper-slide>
+                <div class="swiper-pagination" slot="pagination"></div>
+            </swiper>
+        </div>
     </div>
 </template>
 
 <script>
+    import Vue from 'vue';
+    import { Lazyload } from 'vant';
+
+    Vue.use(Lazyload);
     export default {
-        name: "Swiper1",
+        name: "mallSwipe",
         props:{
-            List:Array
+            mSwipe:Array
         },
         data (){
             return {
@@ -31,17 +37,13 @@
         },
         computed:{
             showList(){
-                return this.List.length;
+                return this.mSwipe.length;
             }
         }
-
     }
 </script>
 
 <style scoped>
-    /*样式穿透，设置父组件下所有的.swiper-pagination-bullet-active
-    轮播图选中样式由swiper-pagination-bullet-active控制
-    */
     .wrapper >>> .swiper-pagination-bullet-active{
         background: white !important;
     }

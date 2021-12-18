@@ -6,6 +6,69 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "5182675",
+      "name": "buscode",
+      "font_class": "chengchema",
+      "unicode": "e658",
+      "unicode_decimal": 58968
+    },
+    {
+      "icon_id": "5210665",
+      "name": "49-信用分",
+      "font_class": "-xinyongfen",
+      "unicode": "e618",
+      "unicode_decimal": 58904
+    },
+    {
+      "icon_id": "6551218",
+      "name": "群信息",
+      "font_class": "qunxinxi",
+      "unicode": "e652",
+      "unicode_decimal": 58962
+    },
+    {
+      "icon_id": "7638964",
+      "name": "下载",
+      "font_class": "xiazai",
+      "unicode": "e612",
+      "unicode_decimal": 58898
+    },
+    {
+      "icon_id": "11462651",
+      "name": "设置",
+      "font_class": "shezhi",
+      "unicode": "e642",
+      "unicode_decimal": 58946
+    },
+    {
+      "icon_id": "5809155",
+      "name": "待付款",
+      "font_class": "daifukuan",
+      "unicode": "e67f",
+      "unicode_decimal": 59007
+    },
+    {
+      "icon_id": "12943390",
+      "name": "待点评@0.5x",
+      "font_class": "daidianpingx",
+      "unicode": "e742",
+      "unicode_decimal": 59202
+    },
+    {
+      "icon_id": "15226158",
+      "name": "订单-待出行",
+      "font_class": "dingdan-daichuhang",
+      "unicode": "e60b",
+      "unicode_decimal": 58891
+    },
+    {
+      "icon_id": "9666181",
+      "name": "会员",
+      "font_class": "huiyuan",
+      "unicode": "e605",
+      "unicode_decimal": 58885
+    },
+    {
       "icon_id": "2674472",
       "name": "返回",
       "font_class": "fanhui",

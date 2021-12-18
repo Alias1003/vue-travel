@@ -6,7 +6,6 @@
                 <div class="header-input">
                     <i class="iconfont icon-sousuo"></i>
                     {{this.iSearch}}
-
                     <i class="iconfont icon-kefu r"></i>
                 </div>
             </router-link>

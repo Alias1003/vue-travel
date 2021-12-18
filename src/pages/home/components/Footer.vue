@@ -8,19 +8,19 @@
                         <p>{{item.footerContent}}</p>
                     </router-link>
                 </div>
-                <div v-if="item.footerContent=='里程商城'">
+                <div v-else-if="item.footerContent=='里程商城'">
                     <router-link to="/mall">
                         <div :class="item.footerClass"></div>
                         <p>{{item.footerContent}}</p>
                     </router-link>
                 </div>
-                <div v-if="item.footerContent=='订单'">
+                <div v-else-if="item.footerContent=='订单'">
                     <router-link to="/order">
                         <div :class="item.footerClass"></div>
                         <p>{{item.footerContent}}</p>
                     </router-link>
                 </div>
-                <div v-if="item.footerContent=='我的'">
+                <div v-else-if="item.footerContent=='我的'">
                     <router-link to="/mine">
                         <div :class="item.footerClass"></div>
                         <p>{{item.footerContent}}</p>
@@ -41,14 +41,13 @@
 </script>
 
 <style scoped>
-    /*.home{*/
-    /*    position: relative;*/
-    /*}*/
-    .home-list{
+    .home{
         height: 0;
         padding-bottom: 18%;
-        /*background: #666666;*/
-        display: flex;
+        background: white;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
     }
     .list{
         width: 25%;

@@ -6,9 +6,6 @@
         <Icon :iList="iconList"></Icon>
         <Recommend :rdList="recommendList"></Recommend>
         <Footer :fList="footerList"></Footer>
-<!--        <p>home页面</p>-->
-<!--        <router-link to="/List">跳转</router-link>-->
-
     </div>
 </template>
 
@@ -41,7 +38,7 @@
         },
         methods:{
             getHomeInfo (){
-                axios.get('/index.json')
+                axios.get('/home.json')
                     .then(this.getHomeInfoSucc)
                     .catch(err=>{
                         console.log(err)

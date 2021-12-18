@@ -69,6 +69,7 @@
 
     .List{
         padding: 0.3rem 0.4rem 1.2rem 0.4rem;
+        background: white;
 
     }
     .one {

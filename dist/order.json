@@ -1,0 +1,12 @@
+{
+  "ret": true,
+  "data": {
+    "orderList": [
+      {"id": "0001","addrList": "广州南-长沙南","priceList": "￥365","timeList": "01月17日","iconClass": "iconfont icon-huoche","typeList": "G12306","solutionList": "购票失败"},
+      {"id": "0002","addrList": "佛山西-长沙南","priceList": "￥498","timeList": "12月08日","iconClass": "iconfont icon-huoche","typeList": "G12304","solutionList": "购票成功"},
+      {"id": "0003","addrList": "深圳北-长沙南","priceList": "￥265","timeList": "10月17日","iconClass": "iconfont icon-huoche","typeList": "G12305","solutionList": "购票成功"},
+      {"id": "0004","addrList": "广州南-佛山西","priceList": "￥667","timeList": "11月23日","iconClass": "iconfont icon-huoche","typeList": "G12309","solutionList": "购票失败"},
+      {"id": "0005","addrList": "佛山西-广州南","priceList": "￥306","timeList": "12月10日","iconClass": "iconfont icon-huoche","typeList": "G12308","solutionList": "购票成功"}
+    ]
+  }
+}

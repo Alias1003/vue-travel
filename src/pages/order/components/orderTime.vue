@@ -35,7 +35,11 @@
 </script>
 
 <style scoped>
+    /*.book{*/
+    /*    position: relative;*/
+    /*}*/
     .book p{
+        clear: both;
         width: 63%;
         font-size: 16px;
         background: #c3c8d4;
@@ -43,6 +47,5 @@
         border-radius: 0.4rem;
         padding: 0.2rem 0.4rem;
         margin: 0.4rem 0.2rem 0.2rem 0.2rem;
-
     }
 </style>

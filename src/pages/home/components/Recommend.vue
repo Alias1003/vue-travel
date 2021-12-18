@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="rec">
         <div class="recommend border-bottom" v-for="rec in rdList" :key="rec.id">
             <img :src="rec.imgUrl" alt="">
             <div class="item">
@@ -17,34 +17,14 @@
         props:{
             rdList:Array
         },
-        data(){
-            return{
-                // recommendList: [
-                //     {
-                //         id: '001',
-                //         imgUrl: "https://img1.baidu.com/it/u=3275206406,773753497&fm=26&fmt=auto",
-                //         title: '蒜香排骨',
-                //         content: '具体做法'
-                //     },
-                //     {
-                //         id: '002',
-                //         imgUrl: "https://img1.baidu.com/it/u=3275206406,773753497&fm=26&fmt=auto",
-                //         title: '蒜香排骨',
-                //         content: '具体做法'
-                //     },
-                //     {
-                //         id: '003',
-                //         imgUrl: "https://img1.baidu.com/it/u=3275206406,773753497&fm=26&fmt=auto",
-                //         title: '蒜香排骨',
-                //         content: '具体做法'
-                //     }
-                // ]
-            }
-        }
     }
 </script>
 
 <style scoped>
+    .rec{
+
+        padding-bottom: 1rem;
+    }
     .recommend {
         height: 2.8rem;
         width: 100%;

@@ -1,0 +1,31 @@
+{
+  "ret" : true,
+  "data": {
+    "mineList": [
+      {"id": "0001","titleList": "694","contentList": "里程兑换","iconClass": "iconfont icon-fanhui"},
+      {"id": "0002","titleList": "4","contentList": "代金券","iconClass": "iconfont icon-fanhui"},
+      {"id": "0003","titleList": "0","contentList": "我的现金","iconClass": "iconfont icon-fanhui"},
+      {"id": "0004","titleList": "11","contentList": "银卡权益","iconClass": "iconfont icon-fanhui"}
+    ],
+    "mineOrder": [
+      {"id": "0001","titleList": "全部订单","iconClass": "icon-dingdan"},
+      {"id": "0002","titleList": "待付款","iconClass": "icon-daifukuan"},
+      {"id": "0003","titleList": "待出行","iconClass": "icon-dingdan-daichuhang"},
+      {"id": "0004","titleList": "待点评","iconClass": "icon-daidianpingx"}
+    ],
+    "mineTool": [
+      {"id": "0001","titleList": "我的行程","iconClass": "icon-dingdan-daichuhang"},
+      {"id": "0002","titleList": "信用分","iconClass": "icon--xinyongfen"},
+      {"id": "0003","titleList": "已领权益","iconClass": "icon-beiyongjin"},
+      {"id": "0004","titleList": "领券中心","iconClass": "icon-huiyuan"},
+      {"id": "0005","titleList": "我的客服","iconClass": "icon-kefu"},
+      {"id": "0006","titleList": "我的发票","iconClass": "icon-31hongbao"},
+      {"id": "0007","titleList": "乘公交","iconClass": "icon-chengchema"},
+      {"id": "0008","titleList": "常用信息","iconClass": "icon-qunxinxi"},
+      {"id": "0009","titleList": "我的酒店","iconClass": "icon-24gl-hotel"},
+      {"id": "0010","titleList": "充值中心","iconClass": "icon-shouye"},
+      {"id": "0011","titleList": "设置","iconClass": "icon-shezhi"},
+      {"id": "0012","titleList": "下载APP","iconClass": "icon-xiazai"}
+    ]
+  }
+}

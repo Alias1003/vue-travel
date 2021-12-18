@@ -1,0 +1,50 @@
+{
+  "ret": true,
+  "data": {
+    "inputSearch": "同程出行18会员日",
+    "swiperList": [
+      {"id":"0001", "imgUrl":"https://img0.baidu.com/it/u=198206834,3955478735&fm=26&fmt=auto"},
+      {"id":"0002", "imgUrl":"https://img0.baidu.com/it/u=2849012984,2395175327&fm=26&fmt=auto"},
+      {"id":"0003", "imgUrl":"https://img1.baidu.com/it/u=342810470,942851656&fm=26&fmt=auto"},
+      {"id":"0004", "imgUrl":"https://img1.baidu.com/it/u=2491013094,2322120236&fm=26&fmt=auto"},
+      {"id":"0005", "imgUrl":"https://img1.baidu.com/it/u=1355341004,1333864908&fm=26&fmt=auto"}
+    ],
+    "iconList": [
+      {"id": "0001", "iconClass": "iconfont icon-24gl-hotel","iconContent":"订酒店"},
+      {"id": "0002", "iconClass": "iconfont icon-dangdidachefuwu2","iconContent":"低价打车"},
+      {"id": "0003", "iconClass": "iconfont icon-lvyou","iconContent":"旅游"},
+      {"id": "0004", "iconClass": "iconfont icon-qiangpiao","iconContent":"抢票"},
+      {"id": "0005", "iconClass": "iconfont icon-hewomenliaoliao","iconContent":"同程聊聊"},
+      {"id": "0006", "iconClass": "iconfont icon-31hongbao","iconContent":"火车票优惠"},
+      {"id": "0007", "iconClass": "iconfont icon-huochezhan","iconContent":"我的12306"},
+      {"id": "0008", "iconClass": "iconfont icon-pinche","iconContent":"船票拼车"},
+      {"id": "0009", "iconClass": "iconfont icon-hewomenliaoliao","iconContent":"同程聊聊"}
+    ],
+    "recommendList": [
+      {
+        "id": "001",
+        "imgUrl": "https://img1.baidu.com/it/u=3275206406,773753497&fm=26&fmt=auto",
+        "title": "蒜香排骨",
+        "content": "具体做法具体做法具体做法具体做法"
+      },
+      {
+        "id": "002",
+        "imgUrl": "https://img0.baidu.com/it/u=574283538,544700096&fm=26&fmt=auto",
+        "title": "铁板牛排",
+        "content": "具体做法具体做法具体做法具体做法"
+      },
+      {
+        "id": "003",
+        "imgUrl": "https://pic.rmb.bdstatic.com/30f6ab60dfcc9e973050b951767a8c8a.png",
+        "title": "蜜汁烤鸡",
+        "content": "具体做法具体做法具体做法具体做法"
+      }
+    ],
+    "footerList": [
+      {"id":"0001","footerClass":"iconfont icon-shouye","footerContent":"首页"},
+      {"id":"0002","footerClass":"iconfont icon-shangcheng","footerContent":"里程商城"},
+      {"id":"0003","footerClass":"iconfont icon-dingdan","footerContent":"订单"},
+      {"id":"0004","footerClass":"iconfont icon-wode","footerContent":"我的"}
+    ]
+  }
+}
