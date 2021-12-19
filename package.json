@@ -16,6 +16,7 @@
     "vue": "^2.6.11",
     "vue-awesome": "^4.3.1",
     "vue-awesome-swiper": "^4.1.1",
+    "vue-better-swiper": "^1.1.2",
     "vue-router": "^3.5.3"
   },
   "devDependencies": {

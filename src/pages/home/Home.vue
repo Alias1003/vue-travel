@@ -5,7 +5,10 @@
         <Swiper1 :List="swiperList"></Swiper1>
         <Icon :iList="iconList"></Icon>
         <Recommend :rdList="recommendList"></Recommend>
-        <Footer :fList="footerList"></Footer>
+        <keep-alive>
+            <Footer></Footer>
+        </keep-alive>
+
     </div>
 </template>
 
@@ -16,7 +19,7 @@
     import Icon from './components/Icon'
     import Recommend from './components/Recommend'
     import axios from 'axios'
-    import Footer from './components/Footer'
+    import Footer from '../../components/Footer'
     export default {
         name: "Home",
         data(){
@@ -25,7 +28,8 @@
                 iconList:[],
                 swiperList:[],
                 recommendList:[],
-                footerList:[]
+                // footerList:[],
+
             }
         },
         components:{
@@ -53,7 +57,7 @@
                     this.iconList = res.data.iconList;
                     this.swiperList = res.data.swiperList;
                     this.recommendList = res.data.recommendList;
-                    this.footerList = res.data.footerList;
+                    // this.footerList = res.data.footerList;
                 }
             }
         },

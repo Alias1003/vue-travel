@@ -7,6 +7,9 @@
         <div class="icon">
             <i class="iconfont icon-mayijinfu"></i>
         </div>
+        <keep-alive>
+            <Footer></Footer>
+        </keep-alive>
     </div>
 </template>
 
@@ -15,6 +18,7 @@
     import mineList from './components/mineList'
     import mineOrder from './components/mineOrder'
     import mineTool from './components/mineTool'
+    import Footer from '../../components/Footer'
     import axios from 'axios'
     export default {
         name: "Mine",
@@ -29,7 +33,8 @@
             mineHeader,
             mineList,
             mineOrder,
-            mineTool
+            mineTool,
+            Footer
         },
         methods:{
             getMineInfo(){

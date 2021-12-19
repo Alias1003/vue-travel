@@ -7,25 +7,28 @@
                 </router-link>
                 <p>订单</p>
             </div>
-            <div class="all">
-                <div>待出行订单</div>
-                <div class="active">全部订单
-                    <div class="line"></div>
-                </div>
-            </div>
+<!--            <div class="all">-->
+<!--                <div>待出行订单</div>-->
+<!--                <div class="active">全部订单-->
+<!--                    <div class="line"></div>-->
+<!--                </div>-->
+<!--            </div>-->
         </div>
     </div>
 </template>
 
 <script>
+
     export default {
         name: "orderHeader",
+
+
     }
 </script>
 
 <style scoped>
     .list{
-        height: 2rem;
+        height: 1rem;
         background: #777777;
     }
     .border-bottom::before{
@@ -35,7 +38,7 @@
         background-color: white;
         position: fixed;
         width: 100%;
-        height: 2rem;
+        height: 1rem;
         /*left: 0;*/
         top: 0;
         z-index: 1000;
@@ -57,37 +60,37 @@
         left: 46%;
         font-size: 20px;
     }
-    .all{
-        width: 100%;
-        position: relative;
-    }
-    .all div{
-        clear: both;
-        font-size: 20px;
-        padding: 0.3rem 0.5rem;
-        margin: auto;
-    }
-    .all div:nth-child(1){
-        position: absolute;
-        left: 0.6rem;
-        top: 1rem;
-    }
-    .all div:nth-child(2){
-        position: absolute;
-        right: 0.6rem;
-        top: 1rem;
-    }
-    .all div.active>.line::after{
-        content: "";
-        width: 0.3rem;
-        height: 0.001rem;
-        position: absolute;
-        right: 0;
-        top: -0.3rem;
-        border: 0.1rem solid green;
-        border-radius: 0.1rem;
-    }
-    .all div.active{
-        border-radius: 0.2rem;
-    }
+    /*.all{*/
+    /*    width: 100%;*/
+    /*    position: relative;*/
+    /*}*/
+    /*.all div{*/
+    /*    clear: both;*/
+    /*    font-size: 20px;*/
+    /*    padding: 0.3rem 0.5rem;*/
+    /*    margin: auto;*/
+    /*}*/
+    /*.all div:nth-child(1){*/
+    /*    position: absolute;*/
+    /*    left: 0.6rem;*/
+    /*    top: 1rem;*/
+    /*}*/
+    /*.all div:nth-child(2){*/
+    /*    position: absolute;*/
+    /*    right: 0.6rem;*/
+    /*    top: 1rem;*/
+    /*}*/
+    /*.all div.active>.line::after{*/
+    /*    content: "";*/
+    /*    width: 0.3rem;*/
+    /*    height: 0.001rem;*/
+    /*    position: absolute;*/
+    /*    right: 0;*/
+    /*    top: -0.3rem;*/
+    /*    border: 0.1rem solid green;*/
+    /*    border-radius: 0.1rem;*/
+    /*}*/
+    /*.all div.active{*/
+    /*    border-radius: 0.2rem;*/
+    /*}*/
 </style>

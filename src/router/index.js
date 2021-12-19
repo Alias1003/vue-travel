@@ -5,8 +5,19 @@ import Order from '../pages/order/Order.vue'
 import Search from '../pages/search/Search.vue'
 import Mine from '../pages/mine/Mine'
 import Mall from '../pages/mall/Mall'
+import {Icon, Tabbar, TabbarItem, Card, Button, Tag,Toast,Tab, Tabs ,Empty} from 'vant';
 
-Vue.use(Router)
+Vue.use(Tabbar);
+Vue.use(TabbarItem);
+Vue.use(Icon);
+Vue.use(Card );
+Vue.use(Button);
+Vue.use(Toast);
+Vue.use(Tab);
+Vue.use(Tag);
+Vue.use(Tabs);
+Vue.use(Empty);
+Vue.use(Router);
 
 export default new Router({
     routes:[

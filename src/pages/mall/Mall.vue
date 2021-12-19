@@ -1,9 +1,12 @@
 <template>
     <div>
         <mallHeader></mallHeader>
-
         <mallSearch></mallSearch>
         <mallSwipe :mSwipe="mallSwipe"></mallSwipe>
+        <mallMsg></mallMsg>
+        <keep-alive>
+            <Footer></Footer>
+        </keep-alive>
     </div>
 </template>
 
@@ -11,13 +14,17 @@
     import mallHeader from './components/mallHeader'
     import mallSwipe from './components/mallSwipe'
     import mallSearch from './components/mallSearch'
+    import mallMsg from './components/mallMsg'
+    import Footer from '../../components/Footer'
     import axios from 'axios'
     export default {
         name: "Mall",
         components:{
             mallHeader,
             mallSwipe,
-            mallSearch
+            mallSearch,
+            Footer,
+            mallMsg
         },
         data(){
             return{
