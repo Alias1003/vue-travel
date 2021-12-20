@@ -20,26 +20,6 @@
       {"id": "0008", "iconClass": "iconfont icon-pinche","iconContent":"船票拼车"},
       {"id": "0009", "iconClass": "iconfont icon-hewomenliaoliao","iconContent":"同程聊聊"}
     ],
-    "recommendList": [
-      {
-        "id": "001",
-        "imgUrl": "https://img1.baidu.com/it/u=3275206406,773753497&fm=26&fmt=auto",
-        "title": "蒜香排骨",
-        "content": "具体做法具体做法具体做法具体做法"
-      },
-      {
-        "id": "002",
-        "imgUrl": "https://img0.baidu.com/it/u=574283538,544700096&fm=26&fmt=auto",
-        "title": "铁板牛排",
-        "content": "具体做法具体做法具体做法具体做法"
-      },
-      {
-        "id": "003",
-        "imgUrl": "https://pic.rmb.bdstatic.com/30f6ab60dfcc9e973050b951767a8c8a.png",
-        "title": "蜜汁烤鸡",
-        "content": "具体做法具体做法具体做法具体做法"
-      }
-    ],
     "footerList": [
       {"id":"0001","footerClass":"iconfont icon-shouye","footerContent":"首页"},
       {"id":"0002","footerClass":"iconfont icon-shangcheng","footerContent":"里程商城"},

@@ -1,12 +1,47 @@
 {
   "ret": true,
   "data": {
-      "mallSwipe": [
-        {"id":"0001", "imgUrl":"https://img0.baidu.com/it/u=198206834,3955478735&fm=26&fmt=auto"},
-        {"id":"0002", "imgUrl":"https://img0.baidu.com/it/u=2849012984,2395175327&fm=26&fmt=auto"},
-        {"id":"0003", "imgUrl":"https://img1.baidu.com/it/u=342810470,942851656&fm=26&fmt=auto"},
-        {"id":"0004", "imgUrl":"https://img1.baidu.com/it/u=2491013094,2322120236&fm=26&fmt=auto"},
-        {"id":"0005", "imgUrl":"https://img1.baidu.com/it/u=1355341004,1333864908&fm=26&fmt=auto"}
-      ]
+    "mallSwipe": [
+      {
+        "id": "0001",
+        "imgUrl": "https://img0.baidu.com/it/u=198206834,3955478735&fm=26&fmt=auto"
+      },
+      {
+        "id": "0002",
+        "imgUrl": "https://img0.baidu.com/it/u=2849012984,2395175327&fm=26&fmt=auto"
+      },
+      {
+        "id": "0003",
+        "imgUrl": "https://img1.baidu.com/it/u=342810470,942851656&fm=26&fmt=auto"
+      },
+      {
+        "id": "0004",
+        "imgUrl": "https://img1.baidu.com/it/u=2491013094,2322120236&fm=26&fmt=auto"
+      },
+      {
+        "id": "0005",
+        "imgUrl": "https://img1.baidu.com/it/u=1355341004,1333864908&fm=26&fmt=auto"
+      }
+    ],
+    "recommendList": [
+      {
+        "id": "001",
+        "imgUrl": "https://img1.baidu.com/it/u=3275206406,773753497&fm=26&fmt=auto",
+        "title": "蒜香排骨",
+        "content": "具体做法具体做法具体做法具体做法"
+      },
+      {
+        "id": "002",
+        "imgUrl": "https://img0.baidu.com/it/u=574283538,544700096&fm=26&fmt=auto",
+        "title": "铁板牛排",
+        "content": "具体做法具体做法具体做法具体做法"
+      },
+      {
+        "id": "003",
+        "imgUrl": "https://img1.baidu.com/it/u=3281647614,3842403082&fm=26&fmt=auto",
+        "title": "秘制豆腐",
+        "content": "具体做法具体做法具体做法具体做法"
+      }
+    ]
   }
 }
