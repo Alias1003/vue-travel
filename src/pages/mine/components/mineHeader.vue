@@ -1,6 +1,6 @@
 <template>
     <div class="header">
-        <div>
+        <div class="header-bar">
             <router-link to="/home">
                 <i class="iconfont icon-shouye"></i>
             </router-link>
@@ -33,6 +33,15 @@
     .header{
         background: #06c584;
         height: 3.8rem;
+        margin: 0;
+        padding: 0;
+    }
+    .header-bar{
+        background: #06c584;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 100;
     }
     i{
         border: 1px solid #cccccc;
@@ -50,12 +59,13 @@
         position: absolute;
         top: 0.3rem;
         left: 46%;
-        font-size: 20px;
+        font-size: 0.4rem;
         color: white;
     }
     .useMsg{
         clear: both;
-        margin-top: 0.3rem;
+        /*margin-bottom: 0.2rem;*/
+        padding-bottom: 0.4rem;
     }
     .useMsg div,img{
         float: left;
@@ -67,12 +77,12 @@
         border-radius: 50%;
         width: 1.5rem;
         height: 1.5rem;
-        margin: 0 0.2rem;
+        margin: 1.1rem 0.2rem 0 0.2rem;
     }
     .useName p{
         font-size: 20px;
         color: white;
-        margin: 0.2rem 0 0.2rem;
+        margin: 1.3rem 0 0.2rem;
     }
     .useName .vip{
         height: 0.5rem;
@@ -104,18 +114,19 @@
         line-height: 0.8rem;
         font-size: 16px;
         color: #793d07;
-        margin-top: 0.4rem;
+        margin-top: 1.4rem;
         border-bottom-left-radius: 0.4rem;
         border-top-left-radius: 0.4rem;
         box-sizing: border-box;
         padding-left: 0.4rem;
     }
     .card{
+        clear: both;
         background: #ffdc91;
         color: #453001;
         height: 0.92rem;
         width: 80%;
-        margin: 2.15rem auto 0;
+        margin: 2.5rem auto 0;
         border-top-left-radius: 0.2rem;
         border-top-right-radius: 0.2rem;
         line-height: 0.92rem;

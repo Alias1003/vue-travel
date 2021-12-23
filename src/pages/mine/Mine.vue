@@ -52,7 +52,8 @@
                     this.mineOrders = res.data.mineOrder;
                     this.mineTools = res.data.mineTool;
                 }
-            }
+            },
+
         },
         mounted() {
             this.getMineInfo()

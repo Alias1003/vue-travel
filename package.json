@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "axios": "^0.24.0",
+    "better-scroll": "^2.4.2",
     "core-js": "^3.6.5",
     "fastclick": "^1.0.6",
     "swiper": "^5.4.5",
@@ -17,7 +18,8 @@
     "vue-awesome": "^4.3.1",
     "vue-awesome-swiper": "^4.1.1",
     "vue-better-swiper": "^1.1.2",
-    "vue-router": "^3.5.3"
+    "vue-router": "^3.5.3",
+    "vuex": "^3.6.2"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",

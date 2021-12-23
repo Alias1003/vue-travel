@@ -1,14 +1,15 @@
 <template>
     <div>
-        <order-header :oList="orderList"></order-header>
+        <order-header></order-header>
         <van-tabs swipeable
-                  :color="'#17d66b'"
-                  :line-height="'10px'"
+                  :color="'#07C782'"
+                  :line-height="'8px'"
                   class="selectTab"
                   :title-style="'fontSize=20px'"
         >
             <van-tab title="待出行订单">
                 <orderReady></orderReady>
+                <cheapList :cList="cheapList"></cheapList>
             </van-tab>
             <van-tab title="全部订单">
                 <orderTime></orderTime>
@@ -25,6 +26,7 @@
     import orderTime from './components/orderTime'
     import orderList from './components/orderList'
     import orderReady from './components/orderReady'
+    import cheapList from './components/cheapList'
     import axios from 'axios'
     import Toast from "vant/es/toast";
     export default {
@@ -33,17 +35,18 @@
             orderHeader,
             orderTime,
             orderList,
-            orderReady
+            orderReady,
+            cheapList
         },
         data(){
             return{
                 orderList:[],
+                cheapList:[]
             }
         },
         methods: {
             onClick(name, title) {
                 Toast(title);
-
             },
             getOrderInfo() {
                 axios.get('/order.json')
@@ -57,6 +60,7 @@
                 res = res.data;
                 if (res.ret && res.data) {
                     this.orderList = res.data.orderList;
+                    this.cheapList = res.data.cheapList;
                 }
             }
         },

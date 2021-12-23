@@ -28,8 +28,16 @@
         height: 1rem;
         line-height: 1rem;
         text-align: center;
+        font-size: 0.4rem;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        background: white;
+        z-index: 100;
     }
-
+    .Header{
+        margin-top: 1rem;
+    }
     .header-input{
         background: rgb(238,237,243);
         height: 0.8rem;

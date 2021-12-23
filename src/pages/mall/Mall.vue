@@ -4,6 +4,7 @@
         <mallSearch></mallSearch>
         <mallSwipe :mSwipe="mallSwipe"></mallSwipe>
         <mallMsg></mallMsg>
+        <Recommend :rdList="recommendList"></Recommend>
         <keep-alive>
             <Footer></Footer>
         </keep-alive>
@@ -15,6 +16,7 @@
     import mallSwipe from './components/mallSwipe'
     import mallSearch from './components/mallSearch'
     import mallMsg from './components/mallMsg'
+    import Recommend from '../mall/components/Recommend'
     import Footer from '../../components/Footer'
     import axios from 'axios'
     export default {
@@ -23,12 +25,14 @@
             mallHeader,
             mallSwipe,
             mallSearch,
+            Recommend,
             Footer,
             mallMsg
         },
         data(){
             return{
-                mallSwipe:[]
+                mallSwipe:[],
+                recommendList:[],
             }
         },
         methods:{
@@ -44,6 +48,7 @@
                 res = res.data;
                 if(res.ret&&res.data){
                     this.mallSwipe = res.data.mallSwipe;
+                    this.recommendList = res.data.recommendList;
                 }
             }
         },

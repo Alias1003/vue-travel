@@ -3,12 +3,13 @@
         <Header :iSearch="inputSearch"></Header>
         <List></List>
         <Swiper1 :List="swiperList"></Swiper1>
+        <Addr></Addr>
         <Icon :iList="iconList"></Icon>
-        <Recommend :rdList="recommendList"></Recommend>
+
+        <div id="fixed"></div>
         <keep-alive>
             <Footer></Footer>
         </keep-alive>
-
     </div>
 </template>
 
@@ -17,7 +18,7 @@
     import List from './components/List'
     import Swiper1 from './components/Swiper'
     import Icon from './components/Icon'
-    import Recommend from './components/Recommend'
+    import Addr from './components/Addr'
     import axios from 'axios'
     import Footer from '../../components/Footer'
     export default {
@@ -27,8 +28,6 @@
                 inputSearch:"",
                 iconList:[],
                 swiperList:[],
-                recommendList:[],
-                // footerList:[],
 
             }
         },
@@ -37,8 +36,8 @@
             List,
             Swiper1,
             Icon,
-            Recommend,
             Footer,
+            Addr
         },
         methods:{
             getHomeInfo (){
@@ -56,8 +55,6 @@
                     this.inputSearch = res.data.inputSearch;
                     this.iconList = res.data.iconList;
                     this.swiperList = res.data.swiperList;
-                    this.recommendList = res.data.recommendList;
-                    // this.footerList = res.data.footerList;
                 }
             }
         },
@@ -68,5 +65,8 @@
 </script>
 
 <style scoped>
-
+    #fixed{
+        height: 1rem;
+        width: 100%;
+    }
 </style>

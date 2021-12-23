@@ -4,23 +4,19 @@
             <router-link to="/">
                 <i class="iconfont icon-fanhui"></i>
             </router-link>
-            <div class="Title">同程旅行</div>
-        </div>
-        <div class="search">
-            <input class="header-input" type="text" placeholder="同程出行18会员日"/>
-            <i class="iconfont icon-sousuo"></i>
-            <i class="iconfont icon-kefu"></i>
-            <button>搜索</button>
+            <div class="Title">城市选择</div>
+
+            <div class="search">
+                <input class="header-input" type="text" placeholder="北京/bj/beijing"/>
+                <i class="iconfont icon-sousuo"></i>
+            </div>
         </div>
     </div>
 </template>
 
 <script>
     export default {
-        name: "searchHeader",
-        props: {
-            iSearch: String
-        }
+        name: "inputSearch"
     }
 </script>
 
@@ -29,7 +25,7 @@
         position: fixed;
         width: 100%;
         top: 0;
-        height: 1rem;
+        height: 2rem;
         line-height: 1rem;
         background: white;
         z-index: 100;
@@ -42,6 +38,9 @@
         display: inline;
         color: #666666;
     }
+    .icon-fanhui:hover {
+        color: black;
+    }
 
     .Title {
         height: 1rem;
@@ -53,46 +52,22 @@
     .search {
         position: relative;
         color: #666666;
-        margin-top: 1rem;
     }
 
     .header-input {
         background: rgb(238, 237, 243);
         height: 0.8rem;
-        width: 75%;
+        width: 84%;
         line-height: 0.8rem;
-        /*text-align: center;*/
         color: #666666;
         border-radius: 0.4rem;
         margin: auto 0.2rem;
-        padding-left: 0.6rem;
-        /*clear:both;*/
+        padding-left: 0.8rem;
     }
-
-    .icon-kefu {
-        padding-right: 0.2rem;
-        position: absolute;
-        right: 1rem;
-        top: 0.20rem;
-        font-size: 22px;
-
-    }
-
     .icon-sousuo {
         position: absolute;
         left: 0.39rem;
-        top: 0.20rem;
+        top: 0.01rem;
         font-size: 20px;
-    }
-
-    button{
-        float: right;
-        color: green;
-        padding-right: 0.3rem;
-        position: absolute;
-        top: 0.15rem;
-        right: 0;
-        font-size: 0.32rem;
-        background: white;
     }
 </style>

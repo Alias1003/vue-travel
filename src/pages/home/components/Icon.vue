@@ -4,7 +4,6 @@
             <swiper-slide v-for="(page,index) in pages" :key="index">
                 <div class="Icons-content" v-for="item in page" :key="item.id">
                     <div v-bind:class="item.iconClass"></div>
-                    <!--<div class="iconfont icon-24gl-hotel"></div>-->
                     <p>{{item.iconContent}}</p>
                 </div>
             </swiper-slide>
@@ -53,6 +52,7 @@
         padding-bottom: 50%;
         /*background: red;*/
         color: rgb(96,103,120);
+        clear: both;
     }
     .Icons-content{
         width: 25%;
