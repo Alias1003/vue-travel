@@ -6,6 +6,7 @@ import Search from '../pages/search/Search.vue'
 import Mine from '../pages/mine/Mine'
 import Mall from '../pages/mall/Mall'
 import searchCity from '../pages/searchCity/searchCity'
+import searchCity2 from '../pages/searchCity2/searchCity'
 import {
     Icon,
     Tabbar,
@@ -51,6 +52,7 @@ export default new Router({
         {path: "/search", name: "Search", component: Search},
         {path: "/mine", name: "Mine", component: Mine},
         {path: "/mall", name: "Mall", component: Mall},
-        {path: "/searchCity", name: "searchCity", component: searchCity}
+        {path: "/searchCity", name: "searchCity", component: searchCity},
+        {path: "/searchCity2", name: "searchCity2", component: searchCity2}
     ]
 })

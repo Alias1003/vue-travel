@@ -6,22 +6,26 @@
             </router-link>
             <div class="Title">城市选择</div>
 
-            <div class="search" >
+            <div class="search">
                 <input
                         class="header-input"
                         type="text"
                         placeholder="北京/bj/beijing"
                         v-model="keyword"
-
                 />
                 <i class="iconfont icon-sousuo"></i>
             </div>
+
         </div>
+        <!--通过v-show="keyword"控制什么时候展现出来-->
         <div class="searchContent" v-show="keyword">
             <ul>
-                <li v-for="item in list" :key="item.id" @click="cityClick(item.name)"
+                <li v-for="item in list"
+                    :key="item.id"
+                    @click="cityClick(item.name)"
+
                 >{{item.name}}</li>
-                <li v-show="noDate">没有搜索到匹配数据</li>
+                <li v-show="noDate">搜索不到匹配数据</li>
             </ul>
         </div>
     </div>
@@ -31,18 +35,18 @@
     export default {
         name: "inputSearch",
         props:{
-            cities:Object
+          cities:Object
         },
         data(){
             return{
                 keyword:'',
                 list:[],
-                timer:null
+                timer:null,
             }
         },
         methods:{
             cityClick(city){
-                this.$store.dispatch("changeCity",city);
+                this.$store.commit("changeCity2",city)
                 this.$router.push('/')
             }
         },
@@ -54,13 +58,13 @@
         watch:{
             keyword(){
                 if(this.timer){
-                    clearTimeout(timer)
+                    clearTimeout(this.timer);
                 }
                 if(!this.keyword){
-                    this.list=[]
-                    return
+                    this.list = [];
+                    return;
                 }
-                let timer = setTimeout(()=>{
+                this.timer = setTimeout(()=>{
                     const result = [];
                     for(let i in this.cities){
                         this.cities[i].forEach((value)=>{
@@ -68,9 +72,8 @@
                                 result.push(value)
                             }
                         })
-
                     }
-                    return this.list=result;
+                    this.list = result;
                 },100)
             }
         }
@@ -127,21 +130,21 @@
         top: 0.01rem;
         font-size: 20px;
     }
+
     .searchContent{
+        background: white;
         position: absolute;
         top: 2rem;
         bottom: 0;
         left: 0;
         right: 0;
-        background: white;
         z-index: 1;
-        overflow: hidden;
     }
     .searchContent li{
-        margin: 0.1rem 0.2rem;
-        border-bottom: 1px solid #cccccc;
         font-size: 0.28rem;
         padding: 0.1rem 0;
+        border-bottom: 1px solid #cccccc;
+        margin: 0.1rem 0.2rem;
         width: 90%;
     }
 </style>

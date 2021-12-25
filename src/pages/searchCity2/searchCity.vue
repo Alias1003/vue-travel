@@ -20,7 +20,7 @@
     import alphabetList from './components/alphabetList'
     import axios from 'axios'
     export default {
-        name: "searchCity",
+        name: "searchCity2",
         data(){
             return{
                 hotCities:[],

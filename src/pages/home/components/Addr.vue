@@ -9,7 +9,7 @@
             <div class="icon">
                 <i class="iconfont icon-huoche"></i>
             </div>
-            <router-link to="/searchCity">
+            <router-link to="/searchCity2">
                 <div class="dest">
                     <!--从公共数据获取数据，不用父子组件间传参-->
                     {{this.$store.state.city2}}

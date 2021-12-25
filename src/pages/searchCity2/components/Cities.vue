@@ -4,7 +4,7 @@
             <div>
                 <div id="current">
                     <p >当前选择城市</p>
-                    <div class="currentCity">{{this.$store.state.city1}}</div>
+                    <div class="currentCity">{{this.$store.state.city2}}</div>
                 </div>
 
 
@@ -12,7 +12,7 @@
                 <div class="hotCities"
                      v-for="item in hLists"
                      :key="item.id"
-                     @click="cityClick(item.name)"
+                     @click="cityClick2(item.name)"
                 >
                     <p class="hotCity">{{item.name}}</p>
                 </div>
@@ -25,7 +25,7 @@
                     <div class="city"
                          v-for="item in items"
                          :key="item.id"
-                         @click="cityClick(item.name)"
+                         @click="cityClick2(item.name)"
                     >
                         <div class="cityName">{{item.name}}</div>
                     </div>
@@ -45,10 +45,12 @@
             cLetter:String
         },
         methods:{
-            cityClick(city){
+            cityClick2(city){
                 // alert(city);
                 //dispatc派发一个changeCity的函数，传递city过去
-                this.$store.dispatch('changeCity',city);
+                // this.$store.dispatch('changeCity2',city);
+                //组件可以不调用actions做转发，直接调用mutations，用commit去调用
+                this.$store.commit('changeCity2',city);
             }
         },
         watch:{
@@ -131,6 +133,7 @@
         padding: 0 0.2rem;
     }
     .cities .cityName{
+        width: 97%;
         border-bottom: 1px solid #cccccc;
     }
 
