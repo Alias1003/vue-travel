@@ -1,6 +1,6 @@
 <template>
     <div class="Icons">
-        <swiper ref="mySwiper" :options="swiperOptions" v-if="isShow">
+        <swiper ref="mySwiper" :options="swiperOptions" v-if="isShow" >
             <swiper-slide v-for="(page,index) in pages" :key="index">
                 <div class="Icons-content" v-for="item in page" :key="item.id">
                     <div v-bind:class="item.iconClass"></div>
@@ -21,7 +21,8 @@
             return {
                 swiperOptions:{
                     autoplay:true,
-                    loop:true
+                    loop:true,
+
                 },
 
             }
@@ -41,7 +42,7 @@
             isShow(){
                 return this.iList.length
             }
-        }
+        },
     }
 </script>
 

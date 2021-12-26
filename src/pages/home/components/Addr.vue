@@ -3,7 +3,7 @@
         <div class="address">
             <router-link to="/searchCity">
                 <div class="from">
-                    {{this.$store.state.city1}}
+                    {{this.city1}}
                 </div>
             </router-link>
             <div class="icon">
@@ -12,7 +12,8 @@
             <router-link to="/searchCity2">
                 <div class="dest">
                     <!--从公共数据获取数据，不用父子组件间传参-->
-                    {{this.$store.state.city2}}
+                    <!--{{this.$store.state.city2}}-->
+                    {{this.city2}}
                 </div>
             </router-link>
             <div class="time">
@@ -44,6 +45,7 @@
 </template>
 
 <script>
+    import {mapState} from 'vuex'
     export default {
         name: "Addr",
         components: {},
@@ -62,7 +64,9 @@
                 this.date = this.formatDate(date);
             },
         },
-
+        computed:{
+            ...mapState(["city1","city2"])
+        }
     }
 </script>
 

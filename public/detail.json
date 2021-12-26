@@ -1,0 +1,11 @@
+{
+  "ret":true,
+  "data": {
+    "imgList": [
+      {"id": "001","imgUrl": "https://gimg2.baidu.com/image_search/src=http%3A%2F%2Finews.gtimg.com%2Fnewsapp_match%2F0%2F11899270507%2F0.jpg&refer=http%3A%2F%2Finews.gtimg.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643096134&t=5eb119d1c49b307a483daac015232373"},
+      {"id": "002","imgUrl": "https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fbkimg.cdn.bcebos.com%2Fpic%2F738b4710b912c8fc04b1309af3039245d6882123&refer=http%3A%2F%2Fbkimg.cdn.bcebos.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643094521&t=3002aca7177e8ae9642db04eba249edc"},
+      {"id": "003","imgUrl": "https://img1.baidu.com/it/u=3290053116,1206098019&fm=26&fmt=auto"},
+      {"id": "004","imgUrl": "https://img0.baidu.com/it/u=4275622528,3987631991&fm=26&fmt=auto"}
+    ]
+  }
+}

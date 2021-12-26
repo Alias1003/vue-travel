@@ -7,6 +7,8 @@ import Mine from '../pages/mine/Mine'
 import Mall from '../pages/mall/Mall'
 import searchCity from '../pages/searchCity/searchCity'
 import searchCity2 from '../pages/searchCity2/searchCity'
+import Detail from '../pages/detail/Detail'
+import recommDetail from '../pages/recommDetail/recommDetail'
 import {
     Icon,
     Tabbar,
@@ -23,7 +25,8 @@ import {
     Calendar,
     Cell,
     IndexBar,
-    IndexAnchor
+    IndexAnchor,
+    GoodsAction, GoodsActionIcon, GoodsActionButton
 } from 'vant';
 
 Vue.use(Tabbar);
@@ -42,6 +45,9 @@ Vue.use(Calendar);
 Vue.use(Cell);
 Vue.use(IndexBar);
 Vue.use(IndexAnchor);
+Vue.use(GoodsAction);
+Vue.use(GoodsActionIcon);
+Vue.use(GoodsActionButton);
 Vue.use(Router);
 
 export default new Router({
@@ -53,6 +59,8 @@ export default new Router({
         {path: "/mine", name: "Mine", component: Mine},
         {path: "/mall", name: "Mall", component: Mall},
         {path: "/searchCity", name: "searchCity", component: searchCity},
-        {path: "/searchCity2", name: "searchCity2", component: searchCity2}
+        {path: "/searchCity2", name: "searchCity2", component: searchCity2},
+        {path: "/detail", name: "Detail", component: Detail},
+        {path: "/recommDetail", name: "recommDetail", component: recommDetail}
     ]
 })

@@ -4,7 +4,8 @@
             <div>
                 <div id="current">
                     <p >当前选择城市</p>
-                    <div class="currentCity">{{this.$store.state.city2}}</div>
+                    <!--<div class="currentCity">{{this.$store.state.city2}}</div>-->
+                    <div class="currentCity">{{this.city2}}</div>
                 </div>
 
 
@@ -37,6 +38,7 @@
 
 <script>
     import Bscroll from 'better-scroll'
+    import {mapState,mapMutations} from 'vuex'
     export default {
         name: "Cities",
         props:{
@@ -50,8 +52,15 @@
                 //dispatc派发一个changeCity的函数，传递city过去
                 // this.$store.dispatch('changeCity2',city);
                 //组件可以不调用actions做转发，直接调用mutations，用commit去调用
-                this.$store.commit('changeCity2',city);
-            }
+                // this.$store.commit('changeCity2',city);
+                this.changeCity2(city);
+                this.$router.push('/')
+            },
+            //把mutations中的changeCity2映射到mapMutations中
+            ...mapMutations(['changeCity2'])
+        },
+        computed:{
+            ...mapState(['city2'])
         },
         watch:{
             cLetter(){
